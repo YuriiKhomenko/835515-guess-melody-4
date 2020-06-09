@@ -1,3 +1,5 @@
+/* global __dirname */
+
 const path = require(`path`);
 const joinedPath = path.join(__dirname, `public`);
 

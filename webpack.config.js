@@ -11,7 +11,7 @@ module.exports = {
   },
   devServer: {
     contentBase: joinedPath,
-    open: false,
+    open: true,
     port: 1337,
   },
   module: {

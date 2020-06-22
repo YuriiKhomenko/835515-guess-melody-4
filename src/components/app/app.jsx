@@ -1,14 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import WelcomeScreen from "../welcome-screen/welcome-screen.jsx";
 
 
-const App = (proprs) => {
-  const {errorsCount} = proprs;
+const welcomeButtonHandler = () => {};
 
+
+const App = ({errorsCount}) => {
   return (
     <WelcomeScreen
-      errorsCount={errorsCount} />
+      errorsCount={errorsCount}
+      onWelcomeButtonClick={welcomeButtonHandler} />
   );
+};
+
+
+App.propTypes = {
+  errorsCount: PropTypes.number.isRequired,
 };
 
 
